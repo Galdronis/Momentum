@@ -10,9 +10,9 @@
     <title>Momentum</title>
 </head>
 
-<header class="inner"> 
-    <h2> <a href="/"> <i class=""></i> </a>Momentum</h2>
+<header class="container container-fluid mt-5"> 
     <nav>
+    <h2> <a href="/"> <i class=""></i> </a>Momentum</h2>
         <ul>
             <li>
                 <a href="/">Home</a>
@@ -28,19 +28,8 @@
 </header>
 
 <body>
- <main class="container container-fluid mt-5"></main>
-    <h1>
-      User Registry
-    </h1>
+ <main class="container container-fluid mt-5 display-flex justify-space-between align-center p-2"></main>
 
-    {{#if logged_in}}
-    <nav>
-      <button class="btn" id="logout">logout</button>
-    {{/if}}
-
-
-
-   
     {{{ body }}}
   </main>
     

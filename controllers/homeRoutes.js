@@ -30,3 +30,18 @@ router.get('/login', (req, res) => {
 });
 
 module.exports = router;
+
+router.get('/library', (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect('personalLibrary')
+    return
+  }
+
+  res.render('login')
+})
+
+router.get('/user', (req, res) => {
+  if (req.session.logged_in) {
+    
+  }
+})

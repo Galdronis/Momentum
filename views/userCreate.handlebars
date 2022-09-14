@@ -1,0 +1,49 @@
+<div class=" userCreate">
+  <nav>
+    <h2> <a href="/"> <i class=""></i> </a>Momentum</h2>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/categories">Categories</a>
+            </li>
+            <li>
+                <a href="/logout">Logout</a>
+            </li>
+        </ul>
+    </nav>
+
+  <div class="container">
+
+    <div class="row md-2 sm-2">
+      <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <h2 class="text-center">Sign Up</h2>
+            <p>Please fill out the form to create an account!</p>
+            <form class="signup">
+              <div class="form-group">
+                <label for="userName" class="text-white">User Name</label>
+                <input type="text" class="form-control" id="userName" placeholder="User Name" required/> 
+              </div>
+              <div class="form-group">
+                <label for="email" class="text-white">Email</label>
+                <input type="text" class="form-control" id="Enter Email" placeholder="Email" required/>
+              </div>
+              <div class="form-group">
+                <label for="psw" class="text-white">Password</label>
+                <input type="password" class="form-control" id="Enter Password" placeholder="Password" required/>
+              </div>
+              <div class="text-center">
+              <button type="submit" class="btn btn-lg btn-info mb-1 mt-1">Sign Up!</button>
+              <p class="mb-0 text-white" style="font-size:larger;">Or log in <a href="/views/login.handlebars">here!</a></p>
+              </div>
+            </form>
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+  </div>
+</div>
+
+<script src="/controllers/api/userRoutes.js"></script>

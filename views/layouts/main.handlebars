@@ -20,23 +20,33 @@
             <li>
                 <a href="/categories">Categories</a>
             </li>
+            {{#if logged_in}}
             <li>
                 <a href="/logout">Logout</a>
             </li>
+            {{/if}}
         </ul>
     </nav>
 </header>
 
 <body>
  <main class="container container-fluid mt-5"></main>
-    <h1>
-      User Registry
-    </h1>
+    {{#if logged_in}}
+    <h3>
+        User Registry
+    </h3>
+    {{else}}
+    <h3>
+      User Login
+    </h3>
+    {{/if}}
 
     {{#if logged_in}}
     <nav>
       <button class="btn" id="logout">logout</button>
     {{/if}}
+
+
 
 
 

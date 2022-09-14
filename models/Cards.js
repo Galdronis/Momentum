@@ -20,6 +20,13 @@ Cards.init(
       allowNull: false,
     },
   },
+  {
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: false,
+    modelName: 'cards',
+  }
 )
 
 module.exports = Cards;

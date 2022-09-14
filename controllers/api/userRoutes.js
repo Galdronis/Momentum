@@ -2,6 +2,7 @@ const router = require('express').Router()
 const { User } = require('../../models')
 
 router.post('/', async (req, res) => {
+
   try {
     const userData = await User.create({
       email: req.body.email,
@@ -60,9 +61,3 @@ router.post('/logout', (req, res) => {
     res.status(404).end();
   }
 });
-
-router.post('./create', (req, res) => {
-
-}
-)
-module.exports = router;

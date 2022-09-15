@@ -32,7 +32,7 @@ router.get('/', async (req, res) => {
   router.post('/', async (req, res) => {
     try {
       const cardData = await Cards.create({
-        reader_id: req.body.user_id,
+        user_id: req.body.user_id,
       });
       res.status(200).json(cardData);
     } catch (err) {
@@ -58,9 +58,5 @@ router.get('/', async (req, res) => {
       res.status(500).json(err);
     }
   });
-
-
-
-
 
 module.exports = router;

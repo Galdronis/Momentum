@@ -22,7 +22,7 @@ router.get('/', withAuth, async (req, res) => {
 
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
-    res.redirect('/');
+    res.render('/');
     return;
   }
 
@@ -33,13 +33,13 @@ module.exports = router;
 
 router.get('/library', (req, res) => {
   if (req.session.logged_in) {
-    res.redirect('library')
+    res.render('library')
     return
   }
 
   res.render('login')
 })
 
-router.get('/create', (req, res) => {
-  res.redirect('userCreate')
+router.get('/userCreate', (req, res) => {
+  res.render('userCreate')
 })

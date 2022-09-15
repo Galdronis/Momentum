@@ -9,7 +9,7 @@ Cards.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: false,
+      autoIncrement: true,
     },
     name: {
       type: DataTypes.STRING,

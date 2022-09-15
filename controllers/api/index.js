@@ -3,8 +3,6 @@ const userRoutes = require('./userRoutes');
 const cardRoutes = require('./cardRoutes');
 
 
-router.use('/users', userRoutes);
-
 router.use('/users', userRoutes)
 
 router.use('/cards', cardRoutes)

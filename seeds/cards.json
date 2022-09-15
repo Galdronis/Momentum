@@ -1,18 +1,22 @@
 [
     {
       "name": "W3Schools",
-      "description": "Coding resource."
+      "description": "Coding resource.",
+      "category": "Coding"
     },
     {
       "name": "KhanAcademy",
-      "email": "Math resource."
+      "description": "Math resources.",
+      "category": "Math"
     },
     {
       "name": "Bootcampspot",
-      "description": "Where my work is to be submitted."
+      "description": "Contains many useful coding links",
+      "category": "Coding"
     },
     {
-      "name": "ixlMath",
-      "description": "A terrible math resource that I hate."
+      "name": "DuoLingo",
+      "description": "For language learning!",
+      "category": "Language Arts"
     }
   ]

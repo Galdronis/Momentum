@@ -29,6 +29,13 @@
                 <a href="/login">Login</a>
             </li>
             {{/if}}
+            {{#if loggedIn}}
+            <li></li>
+            {{else}}
+            <li>
+                <a href="/create">Create account</a>
+            </li>
+            {{/if}}
         </ul>
     </nav>
 </header>

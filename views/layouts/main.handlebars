@@ -20,9 +20,13 @@
             <li>
                 <a href="/categories">Categories</a>
             </li>
-            {{#if logged_in}}
+            {{#if loggedIn}}
             <li>
                 <a href="/logout">Logout</a>
+            </li>
+            {{else}}
+            <li>
+                <a href="/login">Login</a>
             </li>
             {{/if}}
         </ul>

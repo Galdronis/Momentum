@@ -11,15 +11,53 @@
 </head>
 
 <header class="container container-fluid mt-5"> 
-    <nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+            <li class="nav-link">
+                <a href="/">Home</a>
+            </li>
+            {{#if loggedIn}}
+            <li class="nav-link">
+                <a href="/categories">Categories</a>
+            </li>
+            {{else}}
+            {{/if}}
+            {{#if loggedIn}}
+            <li class="nav-link">
+                <a href="/logout">Logout</a>
+            </li>
+            {{else}}
+            <li class="nav-link">
+                <a href="/login">Login</a>
+            </li>
+            {{/if}}
+            {{#if loggedIn}}
+            {{else}}
+            <li class="nav-link">
+                <a href="/create">Create account</a>
+            </li>
+            {{/if}}
+    </ul>
+  </div>
+</nav>
+    {{!-- <nav>
     <h2> <a href="/"> <i class=""></i> </a>Momentum</h2>
         <ul>
             <li>
                 <a href="/">Home</a>
             </li>
+            {{#if loggedIn}}
             <li>
                 <a href="/categories">Categories</a>
             </li>
+            {{else}}
+            {{/if}}
             {{#if loggedIn}}
             <li>
                 <a href="/logout">Logout</a>
@@ -30,14 +68,13 @@
             </li>
             {{/if}}
             {{#if loggedIn}}
-            <li></li>
             {{else}}
             <li>
                 <a href="/create">Create account</a>
             </li>
             {{/if}}
         </ul>
-    </nav>
+    </nav> --}}
 </header>
 
 <body>

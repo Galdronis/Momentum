@@ -41,5 +41,5 @@ router.get('/library', (req, res) => {
 })
 
 router.get('/create', (req, res) => {
-  res.redirect('create')
+  res.redirect('userCreate')
 })

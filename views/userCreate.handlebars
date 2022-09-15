@@ -8,9 +8,11 @@
             <li>
                 <a href="/categories">Categories</a>
             </li>
+            {{#if logged_in}}
             <li>
                 <a href="/logout">Logout</a>
             </li>
+            {{/if}}
         </ul>
     </nav>
 

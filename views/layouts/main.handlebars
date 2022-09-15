@@ -22,59 +22,26 @@
             <li class="nav-link">
                 <a href="/">Home</a>
             </li>
-            {{#if loggedIn}}
+            {{#if logged_in}}
             <li class="nav-link">
                 <a href="/categories">Categories</a>
             </li>
-            {{else}}
-            {{/if}}
-            {{#if loggedIn}}
+
             <li class="nav-link">
                 <a href="/logout">Logout</a>
             </li>
             {{else}}
             <li class="nav-link">
-                <a href="/login">Login</a>
-            </li>
-            {{/if}}
-            {{#if loggedIn}}
-            {{else}}
-            <li class="nav-link">
                 <a href="/create">Create account</a>
+            </li>
+            <li class="nav-link">
+                <a href="/login">Login</a>
             </li>
             {{/if}}
     </ul>
   </div>
 </nav>
-    {{!-- <nav>
-    <h2> <a href="/"> <i class=""></i> </a>Momentum</h2>
-        <ul>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            {{#if loggedIn}}
-            <li>
-                <a href="/categories">Categories</a>
-            </li>
-            {{else}}
-            {{/if}}
-            {{#if loggedIn}}
-            <li>
-                <a href="/logout">Logout</a>
-            </li>
-            {{else}}
-            <li>
-                <a href="/login">Login</a>
-            </li>
-            {{/if}}
-            {{#if loggedIn}}
-            {{else}}
-            <li>
-                <a href="/create">Create account</a>
-            </li>
-            {{/if}}
-        </ul>
-    </nav> --}}
+
 </header>
 
 <body>

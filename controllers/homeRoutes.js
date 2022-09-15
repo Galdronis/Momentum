@@ -15,6 +15,7 @@ router.get('/', withAuth, async (req, res) => {
       users,
       logged_in: req.session.logged_in,
     });
+    console.log(req.session)
   } catch (err) {
     res.status(500).json(err);
   } 
@@ -22,7 +23,7 @@ router.get('/', withAuth, async (req, res) => {
 
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
-    res.render('/');
+    res.redirect('/');
     return;
   }
 

@@ -20,9 +20,20 @@
             <li>
                 <a href="/categories">Categories</a>
             </li>
-            {{#if logged_in}}
+            {{#if loggedIn}}
             <li>
                 <a href="/logout">Logout</a>
+            </li>
+            {{else}}
+            <li>
+                <a href="/login">Login</a>
+            </li>
+            {{/if}}
+            {{#if loggedIn}}
+            <li></li>
+            {{else}}
+            <li>
+                <a href="/create">Create account</a>
             </li>
             {{/if}}
         </ul>

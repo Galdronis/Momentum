@@ -17,7 +17,7 @@ router.get('/', withAuth, async (req, res) => {
     });
   } catch (err) {
     res.status(500).json(err);
-  }
+  } 
 });
 
 router.get('/login', (req, res) => {
@@ -29,17 +29,18 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-module.exports = router;
 
 router.get('/library', (req, res) => {
   if (req.session.logged_in) {
     res.render('library')
     return
   }
-
+  
   res.render('login')
 })
 
-router.get('/userCreate', (req, res) => {
+router.get('/create', (req, res) => {
   res.render('userCreate')
 })
+
+module.exports = router;

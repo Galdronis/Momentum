@@ -18,3 +18,9 @@
 .alignRight {
     text-align: flex-end;
 }
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

@@ -8,7 +8,7 @@ router.post('/', async (req, res) => {
         email: req.body.email,
         password: req.body.password,
       });
-  
+
       req.session.save(() => {
       req.session.logged_in = true;
         

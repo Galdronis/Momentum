@@ -51,13 +51,14 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// router.get('/logout', async (request, response) => {
-//   if (request.session.user_id) {
-//       delete request.session.user_id;
-//       response.json({result: 'SUCCESS'});
-//   } else {
-//       response.json({result: 'ERROR', message: 'User is not logged in.'});
-//   }
-// });
+router.post('/logout', (req, res) => {
+  if (req.session.logged_in) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+  } else {
+    res.status(404).end();
+  }
+});
 
 module.exports = router

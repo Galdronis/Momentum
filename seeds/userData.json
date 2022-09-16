@@ -1,19 +1,23 @@
 [
     {
       "email": "nich.oettinger@gmail.com",
-      "password": "Aspenthedog12!"
+      "password": "Aspenthedog12!",
+      "user_id" : 1
     },
     {
       "email": "HoneyBadger937@gmail.com",
-      "password": "Ligma"
+      "password": "Ligma",
+      "user_id" : 2
     },
     {
       "email": "nickb96@icloud.com",
-      "password": "passwordnice"
+      "password": "passwordnice",
+      "user_id" : 3
     },
     {
       "email": "cronogy@gmail.com",
-      "password": "Omar"
+      "password": "Omar",
+      "user_id" : 4
     }
   ]
   

@@ -12,6 +12,7 @@ function Modal(event) {
     } else {
         // Submit to server
     }
-  
   }
+
   theSubmitButton.addEventListener("click", Modal);
+

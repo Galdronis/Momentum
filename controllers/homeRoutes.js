@@ -29,11 +29,14 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-
 router.get('/library', (req, res) => {
   if (req.session.logged_in) {
-    res.render('library')
-    return
+    res.render('library', {
+      logged_in: req.session.logged_in
+    })
+  } else {
+    redirect('/');
+    return;
   }
   
   res.render('login')

@@ -32,7 +32,8 @@ router.get('/', async (req, res) => {
   router.post('/', async (req, res) => {
     try {
       const cardData = await Cards.create({
-        user_id: req.body.user_id,
+        name: req.body.name,
+        description: req.body.description
       });
       res.status(200).json(cardData);
     } catch (err) {

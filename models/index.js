@@ -3,7 +3,6 @@ const Cards = require('./Cards');
 
 User.hasMany(Cards, {
   foreignKey: 'user_id',
-  onDelete: 'cascade',
 });
 
 Cards.belongsTo(User, {

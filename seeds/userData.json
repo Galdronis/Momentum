@@ -1,20 +1,24 @@
 [
     {
+      "name": "Nicholas Oettinger",
       "email": "nich.oettinger@gmail.com",
       "password": "Aspenthedog12!",
       "user_id" : 1
     },
     {
+      "name": "Alex Wright",
       "email": "HoneyBadger937@gmail.com",
       "password": "Ligma",
       "user_id" : 2
     },
     {
+      "name": "Nicholas Bales",
       "email": "nickb96@icloud.com",
       "password": "passwordnice",
       "user_id" : 3
     },
     {
+      "name": "Omar Farah",
       "email": "cronogy@gmail.com",
       "password": "Omar",
       "user_id" : 4

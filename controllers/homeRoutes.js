@@ -24,11 +24,9 @@ router.get('/library', (req, res) => {
       logged_in: req.session.logged_in
     })
   } else {
-    redirect('/');
+    // redirect('/');
     return;
   }
-  
-  res.render('login')
 })
 
 router.get('/create', (req, res) => {

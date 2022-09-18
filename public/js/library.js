@@ -1,16 +1,25 @@
-function Modal(event) {
+ const Modal = async (event) => {
     event.preventDefault();
   
-    var link = document.querySelector("#link").value;
+    var name = document.querySelector("#link").value;
     var description = document.querySelector("#description").value;
-    var category = document.querySelector("#category").value;
-    if (!link || !description || !category) {
+    if (!name || !description) {
       
       var alert = document.createElement("p");
       alert.textContent = "Please make sure you enter your information in all fields!"
       alertText.append(alert)
     } else {
-        // Submit to server
+      const response = await fetch('/api/cards/', {
+        method: 'POST',
+        body: JSON.stringify({ name, description, }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+  
+      if (response.ok) {
+        document.location.replace('/');
+      } else {
+        alert('Failed to add card');
+      }
     }
   }
 

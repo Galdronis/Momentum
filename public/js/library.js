@@ -1,5 +1,5 @@
-var cardName = document.querySelector("#link").value;
-var description = document.querySelector("#description").value;
+var cardName = document.querySelector("#link");
+var description = document.querySelector("#description");
 var submitBtn = document.querySelector('#theSubmitButton')
 
  const Modal = async (event) => {
@@ -8,7 +8,7 @@ var submitBtn = document.querySelector('#theSubmitButton')
     if (!cardName || !description) {
       alert.textContent = "Please make sure you enter your information in all fields!"
     } else {
-      const response = await fetch('/api/cards/', {
+      const response = await fetch('/api/cards', {
         method: 'POST',
         body: JSON.stringify({ cardName, description, }),
         headers: { 'Content-Type': 'application/json' },
@@ -21,7 +21,16 @@ var submitBtn = document.querySelector('#theSubmitButton')
       }
     }
   }
+  
+  const cardInit = () => {
+    let cardCreate = document.createElement('div');
+    let namePrint = cardName.textContent;
+    let descPrint = description.textContent;
 
+    cardCreate.append(namePrint);
+    cardCreate.append(descPrint);
+
+  }
   // const getCards = () =>
   // fetch('/api/cards', {
   //   method: 'GET',
@@ -43,5 +52,5 @@ var submitBtn = document.querySelector('#theSubmitButton')
   // };
   
 
-submitBtn.addEventListener("click", Modal, getCards, handleCardSave);
+submitBtn.addEventListener("click", Modal, cardInit);
 

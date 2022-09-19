@@ -1,7 +1,8 @@
 
 body {
-     background-color: #171717;  
-     
+    background-color: black; 
+}
+
 .container {
     color: grey;
 }
@@ -9,18 +10,12 @@ body {
 .jumbotron {
     text-align: center;
     background-color: #51c479; 
-    color: #B7B7B7;
+    color: white;
     border-radius: 0;
     /* border-bottom: 4px solid white; */
     height: 50px;
+   
   }
-
-.display-5 {
-    color: #B7B7B7;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-}
-
 
 .alignRight {
     text-align: flex-end;
@@ -36,10 +31,6 @@ body {
 p {
 color: black;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.homepagetext {
-    color : white;
 }
 
 h1 {
@@ -84,7 +75,6 @@ a {
     list-style: none;
     padding: 0px;
     margin: 0px;
-    text-align: center;
 }
 
 .navbar li {
@@ -94,16 +84,6 @@ a {
 
 .navbar a {
    color: white;
-   display: block;
-   padding: 20px 25px;
-   font-size: 15px;
-   font-weight: bold;
-   text-align: center;
-}
-
-.navbar a:hover {
-    background-color: #51c479;
-}
    display: flex;
 }
 

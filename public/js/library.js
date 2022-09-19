@@ -22,25 +22,25 @@ var submitBtn = document.querySelector('#theSubmitButton')
     }
   }
 
-  const getCards = () =>
-  fetch('/api/cards', {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  });
+  // const getCards = () =>
+  // fetch('/api/cards', {
+  //   method: 'GET',
+  //   headers: {
+  //     'Content-Type': 'application/json',
+  //   },
+  // });
 
 
-  const handleCardSave = () => {
-    const newCard = {
-      name: cardName.value,
-      description: description.value,
-    };
-    saveCard(newCard).then(() => {
-      getAndRenderCards();
-      renderActiveCard();
-    });
-  };
+  // const handleCardSave = () => {
+  //   const newCard = {
+  //     name: cardName.value,
+  //     description: description.value,
+  //   };
+  //   saveCard(newCard).then(() => {
+  //     getAndRenderCards();
+  //     renderActiveCard();
+  //   });
+  // };
   
 
 submitBtn.addEventListener("click", Modal, getCards, handleCardSave);

@@ -87,3 +87,7 @@ a {
    color: white;
    display: flex;
 }
+
+.justCenter {
+    justify-content: center;
+}

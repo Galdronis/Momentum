@@ -1,5 +1,7 @@
-.body {
-    background-color: black;
+
+body {
+    background-color: black; 
+    
 }
 
 .container {
@@ -8,11 +10,12 @@
 
 .jumbotron {
     text-align: center;
-    background-color: rgb(130, 224, 130);
+    background-color: #51c479; 
     color: white;
     border-radius: 0;
-    border-bottom: 10px solid white;
+    /* border-bottom: 4px solid white; */
     height: 50px;
+   
   }
 
 .alignRight {
@@ -23,5 +26,66 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
 
+p {
+color: black;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+=======
+h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px
+}
+
+h2 {
+    background-color: rgb(121, 121, 121);
+    border-radius: 6px;
+    border: solid #51c479;
+}
+
+ul {
+    background-color: #060606;
+}
+
+.card-body {
+    background-color: rgb(121, 121, 121);
+}
+
+.card-title {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+   display: flex;
+}
+
+.btn {
+    background-color: #51c479;
+    color:  white;
+}
+
+.testClass {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar a {
+   color: white;
+   display: flex;
+}

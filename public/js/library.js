@@ -1,36 +1,43 @@
-var cardName = document.querySelector("#link");
-var description = document.querySelector("#description");
 var submitBtn = document.querySelector('#theSubmitButton')
-
+ 
  const Modal = async (event) => {
-    event.preventDefault();
-  
-    if (!cardName || !description) {
-      alert.textContent = "Please make sure you enter your information in all fields!"
+   event.preventDefault();
+   var name = document.querySelector("#link").value;
+   var description = document.querySelector("#description").value;
+   console.log({name, description
+   })
+   
+   if (!name || !description) {
+     alert.textContent = "Please make sure you enter your information in all fields!"
     } else {
       const response = await fetch('/api/cards', {
         method: 'POST',
-        body: JSON.stringify({ cardName, description, }),
+        body: JSON.stringify({ name, description, }),
         headers: { 'Content-Type': 'application/json' },
       });
-  
+      
       if (response.ok) {
-        document.location.render('/');
+        document.location.replace('/library');
       } else {
         window.alert('Failed to add card');
       }
     }
   }
+
+
+
   
-  const cardInit = () => {
-    let cardCreate = document.createElement('div');
-    let namePrint = cardName.textContent;
-    let descPrint = description.textContent;
+  // const cardInit = () => {
 
-    cardCreate.append(namePrint);
-    cardCreate.append(descPrint);
 
-  }
+  //   let cardCreate = document.createElement('div');
+  //   let namePrint = cardName;
+  //   let descPrint = description.value;
+
+  //   cardCreate.append(namePrint);
+  //   cardCreate.append(descPrint);
+  // }
+
   // const getCards = () =>
   // fetch('/api/cards', {
   //   method: 'GET',
@@ -38,6 +45,8 @@ var submitBtn = document.querySelector('#theSubmitButton')
   //     'Content-Type': 'application/json',
   //   },
   // });
+
+
 
 
   // const handleCardSave = () => {
@@ -51,6 +60,7 @@ var submitBtn = document.querySelector('#theSubmitButton')
   //   });
   // };
   
+  getCards()
 
-submitBtn.addEventListener("click", Modal, cardInit);
+submitBtn.addEventListener("click", Modal);
 

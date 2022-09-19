@@ -29,6 +29,31 @@ router.get('/library', (req, res) => {
   }
 })
 
+// router.get('/library', async (req, res) => {
+//   try {
+//     const cardData = await Cards.findAll({
+//       include: [{ model: User }],
+//     });
+
+//     const cards = cardData.map((card) =>
+//       card.get({ plain: true })
+//     );
+
+//     console.log(cards)
+
+//     res.render('library',{
+//       cards,
+//       loggedIn: req.session.loggedIn,
+//     })
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+//   });
+
+// router.get('/library', async (req, res) => {
+
+// })
+
 router.get('/create', (req, res) => {
   res.render('userCreate')
 })

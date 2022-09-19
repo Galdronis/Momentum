@@ -8,10 +8,10 @@ body {
 
 .jumbotron {
     text-align: center;
-    background-color: blue;
-    color: black;
+    background-color: rgb(130, 224, 130);
+    color: white;
     border-radius: 0;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid white;
     height: 50px;
   }
 

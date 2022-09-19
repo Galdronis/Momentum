@@ -2,8 +2,6 @@
 body {
      background-color: #171717;  
      
-.container {
-    color: grey;
 }
 
 .jumbotron {
@@ -104,8 +102,7 @@ a {
 .navbar a:hover {
     background-color: #51c479;
 }
-   display: flex;
-}
+
 
 .justCenter {
     justify-content: center;

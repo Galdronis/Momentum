@@ -1,7 +1,9 @@
 
 body {
      background-color: #171717;  
-
+     
+.container {
+    color: grey;
 }
 
 .jumbotron {
@@ -34,6 +36,10 @@ body {
 p {
 color: black;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.homepagetext {
+    color : white;
 }
 
 h1 {
@@ -97,4 +103,10 @@ a {
 
 .navbar a:hover {
     background-color: #51c479;
+}
+   display: flex;
+}
+
+.justCenter {
+    justify-content: center;
 }

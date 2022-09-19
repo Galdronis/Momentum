@@ -9,7 +9,7 @@ const createFormHandler = async (event) => {
     const package = {
       name, email, password
     }
-    if (email && password) {
+    if (name && email && password) {
       console.log(package)
       // Send the e-mail and password to the server
       const response = await fetch('/api/users/create', {

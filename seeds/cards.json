@@ -2,25 +2,21 @@
     {
       "name": "W3Schools",
       "description": "Coding resource.",
-      "category": "Coding",
       "user_id" : 1
     },
     {
       "name": "KhanAcademy",
       "description": "Math resources.",
-      "category": "Math",
       "user_id" : 2
     },
     {
       "name": "Bootcampspot",
       "description": "Contains many useful coding links",
-      "category": "Coding",
       "user_id" : 3
     },
     {
       "name": "DuoLingo",
       "description": "For language learning!",
-      "category": "Language Arts",
       "user_id" : 4
     }
   ]

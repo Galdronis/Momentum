@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    color: black;
+    color: grey;
 }
 
 .jumbotron {
@@ -38,8 +38,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color : white;
 }
 
-
-=======
 h1 {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -92,4 +90,8 @@ a {
 .navbar a {
    color: white;
    display: flex;
+}
+
+.justCenter {
+    justify-content: center;
 }

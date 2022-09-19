@@ -25,45 +25,21 @@ For our second project in this class, we've decided to make a study tracker! Wit
 
 To view the project, clone the git repository using VS Code. this will allow you to vie the index.html file ass well as the css style file. The website can be view by right clicking in the index.html file and opening via web browser.
 
-Link to deployed website: https://github.com/Galdronis/Study-Tracker
+Link to deployed website: https://momentum-initial.herokuapp.com/
+Link to repo: https://github.com/Galdronis/Momentum
+
 
 ---
 
 ### Usage
 
-
+An app intended to be an easily useable, centralized library.
 
 ---
 
 ### User Story
 
 As a User, I want a single application that can track the time I spend studying my textbooks and digital notes and track it over a long period of time, with comparison breakdowns.
-
----
-
-#### Acceptance Criteria
-
-<br>  
-
-
-**Project Requirements:**
-
-
-
-<br>  
-
-**Presentation Requirements:**
-
-
----
-
-
-## Change Log
-## v1.0.0
-
-- adding html, css, js and read me files
-- updating Readme
-
 
 ---
 

@@ -1,15 +1,12 @@
 
 body {
-    background-color: black; 
-}
-
-.container {
-    color: grey;
+     background-color: #171717;  
+     
 }
 
 .jumbotron {
     text-align: center;
-    background-color: #51c479; 
+    background-color: #317649; 
     color: white;
     border-radius: 0;
     /* border-bottom: 4px solid white; */
@@ -84,9 +81,25 @@ a {
 
 .navbar a {
    color: white;
-   display: flex;
+   display: block;
+   padding: 20px 25px;
+   font-size: 15px;
+   font-weight: bold;
+   text-align: center;
 }
+
+.navbar a:hover {
+    background-color: #51c479;
+}
+
 
 .justCenter {
     justify-content: center;
+}
+
+.cardStyle {
+    background-color: #494949;
+    border-radius: 6px;
+    border: solid #51c479;
+    
 }

@@ -24,27 +24,27 @@ var submitBtn = document.querySelector('#theSubmitButton')
     }
   }
 
+  const cardName = document.querySelector('#link').value;
+  const description = document.querySelector('#description').value;
+
+  const cardInit = () => {
 
 
-  
-  // const cardInit = () => {
+    let cardCreate = document.createElement('div');
+    let namePrint = cardName;
+    let descPrint = description.value;
 
+    cardCreate.append(namePrint);
+    cardCreate.append(descPrint);
+  }
 
-  //   let cardCreate = document.createElement('div');
-  //   let namePrint = cardName;
-  //   let descPrint = description.value;
-
-  //   cardCreate.append(namePrint);
-  //   cardCreate.append(descPrint);
-  // }
-
-  // const getCards = () =>
-  // fetch('/api/cards', {
-  //   method: 'GET',
-  //   headers: {
-  //     'Content-Type': 'application/json',
-  //   },
-  // });
+  const getCards = () =>
+  fetch('/api/cards', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
 
 
 
@@ -60,7 +60,7 @@ var submitBtn = document.querySelector('#theSubmitButton')
   //   });
   // };
   
-  getCards()
+  // getCards()
 
-submitBtn.addEventListener("click", Modal);
+submitBtn.addEventListener("click", Modal, cardInit());
 

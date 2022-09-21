@@ -1,38 +1,15 @@
-{{!-- 
 
-
-<div class="cards d-flex">
-<div class="card" style="width: 18rem;">
-  <div class="card-body cardStyle">
-    <a class="card-title" href="https://www.w3schools.com/html/">HTML</a>
-    <p class="card-text">HTML, or Hypertext Markup Language, is a markup language for the web that defines the structure of web pages.</p>
-    {{!-- <a href="#" class="btn">Add information</a> --}}
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <div class="card-body cardStyle">
-    <a class="card-title" href="https://www.w3schools.com/css/">CSS</a>
-    <p class="card-text">CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once. External stylesheets are stored in CSS files.</p>
-    {{!-- <a href="#" class="btn">Add information</a> --}}
-  </div>
-</div> --}}
 
 {{#each cards as |card|}}
 <div class="card" style="width: 18rem;">
   <div class="card-body">
-    <a class="card-title" href="">{{card.name}}</a>
+    <a class="card-title" href="{{card.name}}">{{card.name}}</a>
     <p class="card-text">{{card.description}}</p>
-    <a href="#" class="btn btn-primary">Add information</a>
   <div class="card-body">
   </div>
   </div>
 </div>
 {{/each}}
-
-
-
-
 
 <div class="testClass justify-content-center"><button type="button" class="btn" data-toggle="modal"
         data-target="#exampleModalCenter">
@@ -50,7 +27,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form action="submit">
+            <form action="submit" method="post">
               <input type="text" placeholder="Link" id="link">
               <input type="text" placeholder="Description" id="description">
             </form>

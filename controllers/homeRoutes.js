@@ -1,5 +1,6 @@
 const router =require('express').Router()
 const { User } = require("../models")
+const { Cards } = require("../models")
 
 
 router.get('/', (req, res) => {
@@ -18,16 +19,25 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/library', (req, res) => {
-  if (req.session.logged_in) {
-    res.render('library', {
-      logged_in: req.session.logged_in
+router.get('/library', async (req, res) => {
+  try {
+    const cardData = await Cards.findAll({
+      include: [{ model: User }],
+    });
+    
+    const cards = cardData.map((card) =>
+    card.get({ plain: true })
+    );
+    console.log(cards)
+    
+    res.render('library',{
+      cards,
+      logged_in: req.session.logged_in,
     })
-  } else {
-    // redirect('/');
-    return;
+  } catch (err) {
+    res.status(500).json(err);
   }
-})
+});
 
 // router.get('/library', async (req, res) => {
 //   try {

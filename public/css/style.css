@@ -46,10 +46,6 @@ ul {
     background-color: #060606;
 }
 
-.card-body {
-    background-color: rgb(121, 121, 121);
-}
-
 .card-title {
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -93,13 +89,39 @@ a {
 }
 
 
-.justCenter {
+/* .justCenter {
     justify-content: center;
-}
+} */
 
-.cardStyle {
-    background-color: #494949;
+.card-body {
+    background-color: rgb(121, 121, 121);
     border-radius: 6px;
     border: solid #51c479;
-    
+}
+
+main {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navbar-expand-lg {
+    display: flex important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: center; 
+}
+
+.wrap {
+    flex-wrap: wrap;
 }

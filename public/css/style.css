@@ -125,3 +125,7 @@ main {
 .wrap {
     flex-wrap: wrap;
 }
+
+/* .flexCol {
+    flex-direction: column;
+} */

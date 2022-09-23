@@ -114,7 +114,8 @@ main {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
-} 
+    word-break: break-all;
+}
 
 .navbar-expand-lg {
     display: flex important;

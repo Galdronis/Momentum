@@ -91,9 +91,9 @@ a {
 }
 
 
-.justCenter {
+/* .justCenter {
     justify-content: center;
-}
+} */
 
 .card-body {
     background-color: rgb(121, 121, 121);
@@ -103,14 +103,14 @@ a {
 }
 
 main {
-    width: 100%;
+    /* width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto; */
     display: flex;
-    justify-content: center;
-    align-content: flex-end;
+    /* justify-content: center; */
+    /* align-content: flex-end; */
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
@@ -125,3 +125,11 @@ main {
     flex-wrap: wrap;
     align-content: center; 
 }
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* .flexCol {
+    flex-direction: column;
+} */

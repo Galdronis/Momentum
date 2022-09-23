@@ -6,15 +6,13 @@
         Click here to add a new card!
       </button></div> 
 </div>
-<br>
-<div>
+
+<div class="wrap">
 {{#each cards as |card|}}
 <div class="card wrap" style="width: 18rem;">
   <div class="card-body wrap">
     <a class="card-title" href="{{card.name}}">{{card.name}}</a>
     <p class="card-text">{{card.description}}</p>
-  <div class="card-body">
-  </div>
   </div>
 </div>
 </div>

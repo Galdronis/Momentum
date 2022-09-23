@@ -18,11 +18,12 @@ body {
     text-align: flex-end;
 }
 
-.cards{
+.card{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
+    flex-wrap: nowrap;
+    justify-content: center;
+    border: 5px;
+    width: 250px;
 }
 
 p {
@@ -49,6 +50,7 @@ ul {
 .card-title {
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
 a {
@@ -97,6 +99,7 @@ a {
     background-color: rgb(121, 121, 121);
     border-radius: 6px;
     border: solid #51c479;
+    
 }
 
 main {

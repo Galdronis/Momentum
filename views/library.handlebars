@@ -7,16 +7,14 @@
         Click here to add a new card!
       </button></div> 
 </div>
-<br>
-<div>
+
+<div class="wrap">
 {{#each cards as |card|}}
-<div class="container col-md-2 ">
-<div class="card" style="width: 18rem;">
+<div class="wrap">
+<div class="card">
   <div class="card-body">
     <a class="card-title" href="{{card.name}}">{{card.name}}</a>
     <p class="card-text">{{card.description}}</p>
-  <div class="card-body">
-  </div>
   </div>
 </div>
 </div>
